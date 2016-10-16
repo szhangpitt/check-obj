@@ -36,7 +36,7 @@ describe('path defs with {path, fn}', function () {
             path: 'type',
             fn: (val) => val === 'person' || val === 'stuff'
         }, {
-            path: 'profile.firstName',
+            path: 'profile.name',
             fn: (val) => val && typeof val === 'string'
         }, {
             path: 'profile.age',
@@ -66,7 +66,7 @@ describe('path defs with {path, fn}', function () {
 
 
         expect(result.type.$valid).to.be.true;
-        expect(result.profile.firstName.$valid).to.be.true;
+        expect(result.profile.name.$valid).to.be.false;
         expect(result.profile.age.$valid).to.be.false;
         expect(result.profile._gener.$valid).to.be.false;
         expect(result.profile.hobby.$valid).to.be.true;

@@ -36,7 +36,7 @@ const defs = [{
     path: 'type',
     fn: (val) => val === 'person' || val === 'stuff'
 }, {
-    path: 'profile.firstName',
+    path: 'profile.name',
     fn: (val) => val && typeof val === 'string'
 }, {
     path: 'profile.age',
@@ -64,7 +64,7 @@ var checkFn = pathDefs(defs);
 var result = checkFn(data);
 
 expect(result.type.$valid).to.be.true;
-expect(result.profile.firstName.$valid).to.be.true;
+expect(result.profile.name.$valid).to.be.false;
 expect(result.profile.age.$valid).to.be.false;
 expect(result.profile._gener.$valid).to.be.false;
 expect(result.profile.hobby.$valid).to.be.true;
