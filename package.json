@@ -1,0 +1,32 @@
+{
+  "name": "check-obj",
+  "version": "0.0.1",
+  "description": "check object",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szhangpitt/check-obj.git"
+  },
+  "keywords": [
+    "check",
+    "object"
+  ],
+  "author": "Shaopeng Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szhangpitt/check-obj/issues"
+  },
+  "homepage": "https://github.com/szhangpitt/check-obj#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
