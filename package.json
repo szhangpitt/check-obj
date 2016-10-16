@@ -1,6 +1,6 @@
 {
   "name": "check-obj",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "check object",
   "main": "index.js",
   "scripts": {
