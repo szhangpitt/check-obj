@@ -65,6 +65,8 @@ describe('path defs with {path, fn}', function () {
         var result = checkFn(data);
 
 
+        expect(result.$valid).to.be.false;
+
         expect(result.type.$valid).to.be.true;
         expect(result.profile.name.$valid).to.be.false;
         expect(result.profile.age.$valid).to.be.false;

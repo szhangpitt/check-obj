@@ -63,6 +63,7 @@ const defs = [{
 var checkFn = pathDefs(defs);
 var result = checkFn(data);
 
+expect(result.$valid).to.be.false;
 expect(result.type.$valid).to.be.true;
 expect(result.profile.name.$valid).to.be.false;
 expect(result.profile.age.$valid).to.be.false;
