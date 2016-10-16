@@ -4,7 +4,8 @@
   "description": "check object",
   "main": "index.js",
   "scripts": {
-    "test": "$(npm bin)/mocha test"
+    "test": "$(npm bin)/mocha test",
+    "doc": "$(npm bin)/mocha test --reporter markdown > README.md"
   },
   "repository": {
     "type": "git",
